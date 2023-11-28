@@ -1,0 +1,32 @@
+<!-- app.component.html -->
+
+<p>
+  <mat-toolbar color="primary">
+    <button mat-fab extended color="accent">
+      <mat-icon>Icon</mat-icon>
+      Yennifer Lenzberg 
+    </button>
+    <button mat-fab extended color="warn">
+      <mat-icon></mat-icon>
+      📐Arquitectura
+    </button>
+    <button mat-fab extended color="primary">
+      <mat-icon></mat-icon>
+      🖌️Diseño
+    </button>
+       <span class="example-spacer"></span>
+       
+    
+   <!-- My Three poins Button -->
+   <button mat-icon-button color="dark" [matMenuTriggerFor]="menu">   
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item  (click)="scrollTo('home')" fxHide.lt-md>Home</button>
+    <button mat-menu-item  (click)="scrollTo('Obra1')" fxHide.lt-md>Obra 1</button>
+    <button mat-menu-item  (click)="scrollTo('Obra2')" fxHide.lt-md>Obra 2</button>
+    <button mat-menu-item  (click)="scrollTo('Obra3')" fxHide.lt-md>Obra 3</button>
+
+  </mat-menu>
+  </mat-toolbar>
+</p>
